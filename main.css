@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base{
+    h2{
+        @apply font-semibold text-xl md:text-3xl text-black-dark;
+    }
+    h3{
+        @apply font-semibold text-xl text-black-light;
+    }
+}
+
+@layer components{
+    .text-gray{
+        @apply text-sm text-[#C4C4C4] md:text-[18px] leading-5 md:leading-10;
+    }
+    .blue-btn{
+        @apply px-3 py-1.5 text-sm font-semibold bg-[#0A72AD] text-white md:px-10 md:py-5 md:text-md;
+    }
+    .blue-circle{
+        @apply w-[74px] h-[74px] flex justify-center items-center bg-[#2387C0] rounded-full border-8 border-sky-500 mb-2
+    }
+}
